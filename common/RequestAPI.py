@@ -35,20 +35,3 @@ class testAPI(object):
         # 获取返回信息的json数据
         json_data = self.testAPI.json()
         return json_data
-
-
-'''
-class testLogin(unittest.TestCase):
-    def testLoginApi(self):
-        """ 测试testAPI()方法 """
-
-        api = testAPI('post', 'http://172.16.36.233:7757/service/user/login',
-                      '{"type":0,"uid":"teacher","passwd":"123456","ttype":7,"tid":""}')
-        # apicode = api.getCode()
-        apijson = api.getJson()
-        print apijson
-
-
-if __name__ == '__main__':
-    unittest.main(verbosity=2)
-'''
